@@ -1,25 +1,7 @@
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: df2137ecd308cea12d0c65b15c795ba6_a5b1cc52e34c11f1b140525400de85a5
-    ReservedCode1: mwF2G1yXs9CkWSrsfLEg08GtmbTPOyB0iej2nEMMHvD9e7XKYG53/i2tVxjFXyiTSQTevghp4ic3zc76K2+ymouhzcmKXVlG582r5Zp4nRF/6Ajht8gBJY2215u7HktzcrRMx4hYhTBjb01dgRwehTPh59iHb3S5b9QA+VAbh61y6zt9UxVrmkCR2V0=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: df2137ecd308cea12d0c65b15c795ba6_a5b1cc52e34c11f1b140525400de85a5
-    ReservedCode2: mwF2G1yXs9CkWSrsfLEg08GtmbTPOyB0iej2nEMMHvD9e7XKYG53/i2tVxjFXyiTSQTevghp4ic3zc76K2+ymouhzcmKXVlG582r5Zp4nRF/6Ajht8gBJY2215u7HktzcrRMx4hYhTBjb01dgRwehTPh59iHb3S5b9QA+VAbh61y6zt9UxVrmkCR2V0=
----
-
-
-
 # vivo X Fold 外接屏「免投屏确认」MacroDroid 宏
 
 > 给 vivo X Fold（V2178A）在 OriginOS 5 下外接显示器使用时，自动点掉「镜像到外接显示屏」确认弹窗。
 > 导入即用：**下载一个 `.macro` 文件 → 用 MacroDroid 打开 → 打开开关**，不需要自己搭触发器。
-
-![效果演示](docs/demo.gif)
-
-> 上图位置请替换为实际录屏 GIF（见文末「待补充」）。
-
 ---
 
 ## 这是什么
@@ -58,22 +40,16 @@ OriginOS 5 在接入外接显示器（USB-C DP / 扩展坞）时会弹出确认�
 到本仓库 [Releases](https://github.com/<你的用户名>/<仓库名>/releases) 页面下载最新的：
 
 ```
-vivo-xfold-mirror-auto-click.macro
+vivo-xfold-mirror-auto-click.mdr
 ```
-
-也可以直接扫下面的二维码跳到下载页：
-
-![下载二维码](docs/qrcode.png)
-
-> 二维码图片位置请替换为实际生成的图片（见文末「待补充」）。
 
 ### 第二步：用 MacroDroid 打开
 
-1. 手机上下载好 `.macro` 文件（浏览器下载目录即可）；
+1. 手机上下载好文件（浏览器下载目录即可）；
 2. 用文件管理器点它，或长按 → 打开方式 → 选择 **MacroDroid**；
 3. MacroDroid 会弹出导入确认，点「导入」。
 
-> 如果点了没反应：打开 MacroDroid → 右上角菜单 → 「导入 / 导出」→ 选择该 `.macro` 文件。
+> 如果点了没反应：打开 MacroDroid → 右上角菜单 → 「导入 / 导出」→ 选择该文件。
 
 ### 第三步：开开关 + 授权
 
@@ -129,9 +105,7 @@ vivo-xfold-mirror-auto-click.macro
 
 ## 附录：宏配置明细（想手改的人看这里）
 
-以下从作者原始配置中提取，供需要自己重建或改造的人参考。**正常使用不需要看这一节。**
-
-> 说明：作者原始配置里还有若干个自己的其他宏（无线调试、Shizuku、蓝牙热点等），均与本方案无关且处于禁用状态，因此**不随本仓库分发**。本仓库只提供这一个宏的独立 `.macro` 文件，导入后不会影响你已有的任何宏。
+以下从作者原始配置中提取，供需要自己重建或改造的人参考。还带有几个无用可禁用删除的宏。
 
 ### 基本信息
 
@@ -192,26 +166,4 @@ vivo-xfold-mirror-auto-click.macro
 2. 本宏通过无障碍模拟点击实现，**不是系统级绕过**。系统更新、文案改动、界面结构调整都可能导致失效，作者不保证长期可用。
 3. 使用本宏造成的一切后果（包括但不限于误点击、数据丢失、设备异常、保修问题）由使用者自行承担，作者不承担任何责任。
 4. 本仓库**不提供 MacroDroid 安装包、不提供整包 `.mdr` 备份文件、不提供任何 root / 提权工具文件**。所需的 MacroDroid 请通过官方渠道（Google Play / 官网）自行获取并遵守其许可协议。
-5. 本仓库仅包含作者自行编写的 `.macro` 配置文件，与 vivo、MacroDroid（ArloSoft）均无关联，未获其背书。
-
----
-
-## 待补充占位项（作者发布前请替换）
-
-| 占位项 | 位置 | 说明 |
-|---|---|---|
-| `https://github.com/<你的用户名>/<仓库名>` | 「第一步：下载宏文件」的 Releases 链接 | 建好仓库后替换成真实地址（放在根目录的 README 不能用 `../../releases` 这类上跳相对路径，会解析到仓库外） |
-| `docs/demo.gif` | 文首「效果演示」图片（`![效果演示](docs/demo.gif)`） | 需在仓库根目录下建 `docs/` 文件夹并放入该文件，否则图片 404。录制 5-10 秒：接上外接屏 → 弹窗 → 自动点击 → 出画面，建议控制在 5MB 内 |
-| `docs/qrcode.png` | 「第一步」二级的下载二维码（`![下载二维码](docs/qrcode.png)`） | 用 Release 页面 URL 生成二维码后放入 `docs/`，与上一条同一个目录 |
-| `vivo-xfold-mirror-auto-click.macro` | 全文（下载说明 + 代码块） | 若实际导出的文件名不同，全文统一替换；上传 Release 时建议直接用这个名字 |
-| 仓库地址 | 专栏文案「获取方式」第 1 条 | `https://github.com/<你的用户名>/<仓库名>`（README 里也需填） |
-| LICENSE | 仓库根目录 | 建议 MIT 或 CC BY-NC 4.0，确定后补 `LICENSE` 文件并同步改掉文末「许可」小节措辞 |
-| `docs/` 目录 | 仓库根目录 | README 的两处图片都指向它，必须先建目录再上传图片 |
-
----
-
-## 许可
-
-配置文件部分建议采用 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.zh) 或 MIT 许可（发布前请确定并补充 LICENSE 文件）。
-*（内容由AI生成，仅供参考）*
-*（内容由AI生成，仅供参考）*
+5. 本仓库仅包含作者自行编写的配置文件，与 vivo、MacroDroid（ArloSoft）均无关联，未获其背书。
