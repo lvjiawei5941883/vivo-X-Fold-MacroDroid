@@ -1,7 +1,7 @@
-# vivo X Fold 外接屏「免投屏确认」MacroDroid 宏
+# 无屏 vivo X Fold 外接屏「免投屏确认」MacroDroid 宏
 
 > 给 vivo X Fold（V2178A）在 OriginOS 5 下外接显示器使用时，自动点掉「镜像到外接显示屏」确认弹窗。
-> 导入即用：**下载一个 `.macro` 文件 → 用 MacroDroid 打开 → 打开开关**，不需要自己搭触发器。
+> 导入即用：**下载一个 `.mdr` 文件 → 用 MacroDroid 打开 → 打开开关**，不需要自己搭触发器。
 ---
 
 ## 这是什么
