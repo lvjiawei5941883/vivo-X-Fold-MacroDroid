@@ -37,7 +37,7 @@ OriginOS 5 在接入外接显示器（USB-C DP / 扩展坞）时会弹出确认�
 
 ### 第一步：下载宏文件
 
-到本仓库 [Releases](https://github.com/<你的用户名>/<仓库名>/releases) 页面下载最新的：
+到本仓库下载最新的：
 
 ```
 vivo-xfold-mirror-auto-click.mdr
